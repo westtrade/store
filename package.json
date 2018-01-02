@@ -1,0 +1,12 @@
+{
+  "name": "@westtrade/store",
+  "version": "1.0.0",
+  "description": "Simple vanilla Redux like js tiny store.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
