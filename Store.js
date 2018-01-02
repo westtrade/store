@@ -1,5 +1,5 @@
 
-module.exports = function Store(defaultState) {
+function Store(defaultState) {
     this.__state = Object.assign({}, defaultState || {});
     this.__reducers = [];
 }
@@ -26,3 +26,5 @@ var storePrototype = {
 }
 
 Object.assign(Store.prototype, storePrototype);
+
+module.exports = Store;
