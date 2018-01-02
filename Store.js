@@ -15,14 +15,11 @@ var storePrototype = {
         }
     },
 
-    use(...reducers) {
-        this.__reducers.push(...reducers);
+    use() {
+        var args = Array.prototype.slice.call(arguments);
+        this.__reducers.concat(args);
     },
-
-    // removeReducer(params) {
-        
-    // },
-
+    
     get state() {
         return Object.assign({}, this.__state);
     },
