@@ -17,7 +17,7 @@ var storePrototype = {
 
     use() {
         var args = Array.prototype.slice.call(arguments);
-        this.__reducers.concat(args);
+        this.__reducers = this.__reducers.concat(args);
     },
     
     get state() {
